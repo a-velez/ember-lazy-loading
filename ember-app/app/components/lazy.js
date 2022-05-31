@@ -9,8 +9,8 @@ export default class LazyComponent extends Component {
 
     try {
       console.log(this.args.path);
-      // let importedModule = await import('ember-addon/components/demo');
-      let importedModule = await import(this.args.path);
+      let importedModule = await import('ember-addon/components/demo');
+      // let importedModule = await import(this.args.path);
 
       this.TheComponent = importedModule.default;
     } catch (e) {
