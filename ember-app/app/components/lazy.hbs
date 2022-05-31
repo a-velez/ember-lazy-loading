@@ -1,0 +1,12 @@
+<button {{on 'click' this.loadComponent}}>
+  Load
+  {{@loadComponent.name}}
+</button>
+
+{{#if this.TheComponent}}
+  <this.TheComponent />
+{{/if}}
+
+{{#if this.error}}
+  {{this.error}}
+{{/if}}
